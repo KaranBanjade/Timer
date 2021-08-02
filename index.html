@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timer.css">
+    <title>Timer</title>
+</head>
+<body>
+    <h1>Timer</h1>
+    <div class="combine">
+        <div class="input-group" id = "Time">
+            <div class="">
+            <input type="number" name="h" id="h" placeholder="Hrs" value="00" min="0" max="24">
+            <input type="number" name="m" id="m" placeholder="Min" value="00" min="0" max="59">
+            <input type="number" name="s" id="s" placeholder="Sec" value="00" min="0" max="59">
+        </div>
+        <div id="buttons">
+            <button id = "start">Start</button>
+            <button id = "stop">Stop</button>
+            <button id = "reset">Reset</button>
+        </div>
+    </div>
+    <script src="Timer.js"></script>
+</body>
+</html>
