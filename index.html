@@ -4,24 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="timer.css">
-    <title>Timer</title>
+    <title>Stopwatch</title>
 </head>
 <body>
-    <h1>Timer</h1>
-    <div class="combine">
-        <div class="input-group" id = "Time">
-            <div class="">
-            <input type="number" name="h" id="h" placeholder="Hrs" value="00" min="0" max="24">
-            <input type="number" name="m" id="m" placeholder="Min" value="00" min="0" max="59">
-            <input type="number" name="s" id="s" placeholder="Sec" value="00" min="0" max="59">
+    <div class="center">
+        <div class="items">
+            <input type="text" placeholder="hrs" id="hr">
+            <span>Hours</span>
         </div>
-        <div id="buttons">
-            <button id = "start">Start</button>
-            <button id = "stop">Stop</button>
-            <button id = "reset">Reset</button>
+        <div class="items">
+            <input type="text" placeholder="mins" id="min">
+            <span>Minutes</span>
         </div>
-    </div>
+        <div class="items">
+            <input type="text" placeholder="sec" id="sec">
+            <span>Seconds</span>
+        </div>
+       </div>
+       <div class="two">
+        <button id="start">START</button>
+        <button disabled id="stop">STOP</button>
+        <button id="reset">RESET</button>
+       </div>
     <script src="Timer.js"></script>
+    
 </body>
 </html>

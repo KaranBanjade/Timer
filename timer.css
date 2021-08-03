@@ -1,75 +1,84 @@
-html{
-    background-color: rgb(0, 0, 0);
+*{
+    font-family: "Ubuntu",sans-serif;
 }
-h1{
-    color: lightskyblue;
-    text-align: center;
-    font-size: 5em;
-    margin-top: 0;
+body{
+    background-color: rgb(43, 36, 36);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-input{
-    width: 100px;
-    background-color: rgb(144, 6, 6);
-    font-size: 5em;
-    height: 97%;
-    text-align: center;
-    border-radius: 10%;
 
+.center{
+    display: flex;
+    width: 500px;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.items {
+    width: 32%;
+    background-color: rgb(255, 127, 127);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 1px rgb(255, 127, 127);
+}
+.items input{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    height: 70%;
+    background-color: unset;
+    border: none;
+    outline: none;
+    font-size: 3em;
+    text-align: center;
+}
+.items span{
+    font-size: 1.2em;
+    color: rgb(68, 66, 66);
+}
+::placeholder{
+    color: rgba(216, 50, 50,0.5);
+}
+
+@media(max-width: 499px){
+    .center{
+        transform: scale(0.7);
+    }
+}
+@media(max-width: 355px){
+    .center{
+        transform: scale(0.5);
+    }
+}
+
+h1{
+    position: absolute;
+    right: 5px;
+    bottom:5px;
+    font-size: small;
+}
+
+.two{
+    margin-top: 10px;
+    width: 160px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: space-between;
 }
 button{
-    font-size: 1.2em;
-    background-color: rgb(10, 66, 170);
-    height: 100%;
-    border-radius: 15%;
+    width: 33%;
+    background-color: rgb(248, 75, 75);
+    border: none;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1em;
 }
-.combine{
-    height: 30%;
-    display: flex;
-    margin: auto;
-    justify-self: center;
-    justify-content: center;
-    position: absolute;
-    text-align: center;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    flex-wrap: wrap;
+button:disabled{
+    color: rgb(192, 191, 189);
+    opacity: 0.7;
 }
-#time{
-    display: inline-block;
-    margin: auto;
-    justify-content: center;
-}
-#reset{
-font-size: 1.5em;
-}
-
-
-
-@media( max-width: 670px ) {
-   input{
-       font-size: 4.2em;
-       width: 75px;
-   }
-}
-@media( max-width: 520px ) {
-    input{
-        font-size: 3em;
-        width: 50px;
-    }
- }
- 
- @media( max-width: 340px ) {
-    input{
-            font-size: 2em;
-        width: 20px;
-    }
-    button{
-        font-size: 0.6em;
-    }
-    #reset{
-        font-size: 0.6em;
-    }
- }
- 
